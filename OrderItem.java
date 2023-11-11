@@ -22,10 +22,7 @@ public class OrderItem {
         this.price = price;
     }
 
-    public String toString(){
-        return "Ten san pham mua: " + product.getName() + ", so luong mua: " + this.quantityOrder 
-            + ", dia chi khach hang: " + this.address + ", phuong thuc thanh toan: " + this.payment + ", ngay: " + OrderItem.getDate();
-    }     
+
 
     public static String getDate(){
         LocalDateTime currentDateTime = LocalDateTime.now();
